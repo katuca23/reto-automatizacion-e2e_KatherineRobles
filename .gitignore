@@ -1,0 +1,30 @@
+# Dependencias
+node_modules/
+
+# Resultados de tests
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Compilados TypeScript
+dist/
+
+# Sistema operativo Mac
+.DS_Store
+**/.DS_Store
+
+# IDE IntelliJ
+.idea/
+*.iml
+
+# Variables de entorno
+.env
+.env.local
+
+# Archivos temporales
+*.zip
+*.log
+
+# Archivos mal nombrados
+gitignore

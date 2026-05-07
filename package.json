@@ -1,0 +1,24 @@
+{
+  "name": "e2e-pichincha",
+  "version": "1.0.0",
+  "description": "Framework de automatización E2E - Simulador de Crédito Banco Pichincha",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:flujo1": "playwright test tests/flujo1-preciso.spec.ts",
+    "test:flujo2": "playwright test tests/flujo2-hipotecario.spec.ts",
+    "test:flujo3": "playwright test tests/flujo3-validaciones.spec.ts",
+    "test:flujo4": "playwright test tests/flujo4-calculos.spec.ts",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "report": "npm run allure:generate && npm run allure:open"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-playwright": "^3.0.0",
+    "allure-commandline": "^2.29.0",
+    "typescript": "^5.4.0"
+  }
+}
